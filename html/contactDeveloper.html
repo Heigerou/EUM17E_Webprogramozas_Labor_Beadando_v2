@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Kapcsolat</title>
+    <link rel="stylesheet" href="../css/contactDeveloper.css">
+</head>
+<body>
+    <nav>
+        <a href="LandingPage.html" class="active">Kezdőlap</a>
+        <a href="characterStory.html">Karakter történet</a>
+        <a href="characterSkills.html">Karakter képességek</a>
+        <a href="skillCombo.html">Legjobb Játékosok</a>
+        <a href="characterSkins.html">Karakterhez tartozó kinézetek</a>
+        <a href="contactDeveloper.html">Kapcsolat</a>
+        
+
+    </nav>
+
+    <form id="contactForm">
+        <label>Ön bejelentkezne Dr.Mundo klinikájára? (hírlevél)
+            <input type="checkbox" id="subscribe">
+        </label>
+
+        <div id="formFields" class="hidden">
+            <label for="email">Email cím:</label>
+            <input type="email" id="email" required>
+
+            <label for="password">Jelszó:</label>
+            <input type="password" id="password" required>
+
+            <label for="confirmPassword">Jelszó megerősítése:</label>
+            <input type="password" id="confirmPassword" required>
+
+            <label for="firstName">Keresztnév:</label>
+            <input type="text" id="firstName" required>
+
+            <label for="middleName">Második név (opcionális):</label>
+            <input type="text" id="middleName">
+
+            <label for="lastName">Vezetéknév:</label>
+            <input type="text" id="lastName" required>
+
+            <button type="submit">Elküld</button>
+        </div>
+    </form>
+
+    <div id="message" class="success hidden">Sikeres feliratkozás!</div>
+    
+     <!-- Java script ellenőrzéses hivatkozás-->
+    <script src="../js/contactDeveloper.js"></script>
+<script src="../js/contactDeveloper.js"></script>
+
+</body>
+</html>

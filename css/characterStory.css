@@ -1,0 +1,69 @@
+body{
+                    margin: 0;
+                    padding: 0;
+                    height : 100vh;
+                    align-items: center;
+                    font-family: Arial, Helvetica, sans-serif;
+                    background-image: url(storybackground.jpg);
+                    background-attachment: fixed; /* A háttérkép maradjon látható,  attól független, hogyha az oldal lefelé van pörgetve*/
+                    background-size: cover ;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    text-shadow: 1px 1px 3px;
+                }
+        
+                nav {
+                    background-color:black; /*kék vízszintes menü*/
+                    padding: 10px 0;
+                    text-align: center;
+                    position: fixed; /* A menü maradjon a helyén attól üggetlen, hogy  lefelé van görgetve az oldal*/
+                    top: 0;
+                    width: 100%;
+                    z-index: 1000;
+                }
+                nav a {
+                    color: white;
+                    text-decoration: none;
+                    padding: 10px 20px;
+                    font-weight: bold;
+                    transition: background-color 0.3s;
+                    display: inline-block;
+                }
+                nav a:hover {
+                    background-color: purple; /* egeret ráhúzva lila lesz lila */
+                }
+                /* világítson a menü amiben vagyok*/
+                nav a.active
+                {
+                    background-color: purple;
+                    text-decoration: underline;
+        
+                }
+        
+        
+                .content1 {
+                    text-align: center;
+                    margin-top: 80px;
+                }
+                .content2 {
+                    position: absolute;
+                    bottom: 10px;
+                    width: 100%;
+                    text-align: center;
+                }
+                h1 {
+                        text-align: center;
+                        color: white;
+                        margin-top: 30px;
+                    }
+
+                    .story {
+                        max-width: 800px;
+                        margin: 20px auto;
+                        background-color: rgba(0, 0, 0, 0.6);
+                        padding: 20px;
+                        border-radius: 10px;
+                        color: white;
+                        line-height: 1.6;
+                        font-size: 18px;
+                    }

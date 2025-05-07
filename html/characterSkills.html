@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Karakter képességek</title>
+    <link rel="stylesheet" href="../css/characterSkills.css">
+</head>
+<body>
+    <nav>
+        <a href="LandingPage.html">Kezdőlap</a>
+        <a href="characterStory.html">Karakter történet</a>
+        <a href="characterSkills.html" class="active">Karakter képességek</a>
+        <a href="skillCombo.html">Legjobb Játékosok</a>
+        <a href="characterSkins.html">Karakterhez tartozó kinézetek</a>
+        <a href="contactDeveloper.html">Kapcsolat</a>
+    </nav>
+    <h1 class="page-title">Dr. Mundo képességei</h1>
+
+    <div class="container">
+        <!-- Innentől jönnek a killek keírásai és videói -->
+        <div class="skill-block">
+            <div class="left-content">
+                <img src="../kepek/SkillP.jpg" alt="Oda megy ahova akar"> <!-- Képesség képe és képesség neve-->
+                <p class="skill-text">
+                    Dr. Mundo ellenáll a következő őt ért mozgáskorlátozó hatásnak, helyette veszít az aktuális életerejéből, 
+                    és a közelben eldob egy vegyi tartályt. Dr. Mundo fölé sétálva felveheti, ekkor visszakapja maximális életerejének 
+                    egy részét, és csökken a passzív képesség töltési ideje. Ha a tartály fölé egy ellenfél sétál, az megsemmisül.</p>
+            </div>
+            <video controls poster="mundo-thumbnail1.jpg">
+                <source src="../videos/SkillP.mp4" type="video/mp4"> <!-- Videó helye, és formátuma ( nem youtube-os link)-->
+                A böngésződ nem támogatja a videó lejátszását.
+            </video>
+        </div>
+
+        <div class="skill-block">
+            <div class="left-content">
+                <img src="../kepek/SkillQ.jpg" alt="Fertőzött csontfűrész">
+                <p class="skill-text">
+                    Dr. Mundo elhajít egy fertőzött csontfűrészt, amely az első eltalált ellenfélnek az aktuális életerejétől 
+                    függő varázssebzést okoz, és le is lassítja.</p>
+            </div>
+            <video controls poster="mundo-thumbnail2.jpg">
+                <source src="../videos/SkillQ.mp4" type="video/mp4">
+                A böngésződ nem támogatja a videó lejátszását.
+            </video>
+        </div>
+
+        <div class="skill-block">
+            <div class="left-content">
+                <img src="../kepek/SkillW.jpg" alt="Szívsokkoló">
+                <p class="skill-text">
+                    Dr. Mundo pár másodpercre áramot vezet magába, amivel a közeli ellenfeleknek állandó varázssebzést okoz, 
+                    a saját magának okozott sebzés egy része pedig szürke életerővé alakul. Az időtartam végén Dr. Mundo egyszeri 
+                    varázssebzést okoz a közeli ellenfeleinek, és ha eltalál egy ellenfelet, akkor visszatöltődik a saját szürke életereje 
+                    (a gyógyítás hatása csökken, ha csak minionokat és szörnyeket talál el). 
+                    Dr. Mundo még egyszer elsütheti a Szívsokkolót, de ilyenkor hamarabb véget ér a hatása.</p>
+            </div>
+            <video controls poster="mundo-thumbnail3.jpg">
+                <source src="../videos/SkillW.mp4" type="video/mp4">
+                A böngésződ nem támogatja a videó lejátszását.
+            </video>
+        </div>
+
+        <div class="skill-block">
+            <div class="left-content">
+                <img src="../kepek/SkillE.jpg" alt="Sérülés tompa tárgytól">
+                <p class="skill-text">
+                    Passzív – Dr. Mundo a hiányzó életereje alapján növekvő bónusz támadási sebességre tesz szert.
+
+                    Aktív – Dr. Mundo hozzávágja egy ellenfélhez az „orvosi” táskáját, amely a hiányzó életerejétől függő fizikai sebzést okoz. 
+                    Ha az ellenfél meghal, félrelökődik, és a képesség minimális sebzését okozza azon ellenfeleknek, akiken áthalad.</p>
+            </div>
+            <video controls poster="mundo-thumbnail4.jpg">
+                <source src="../videos/SkillE.mp4" type="video/mp4">
+                A böngésződ nem támogatja a videó lejátszását.
+            </video>
+        </div>
+
+        <div class="skill-block">
+            <div class="left-content">
+                <img src="../kepek/SkillR.jpg" alt="Maximális dózis">
+                <p class="skill-text">Dr. Mundo vegyületeket pumpál magába, amelyek azonnal feltöltik a hiányzó életerejének egy részét. 
+                    Ezután hosszú időtartam alatt a maximális életerejének egy részét is visszatölti, és 
+                    a gyógyulás közben bónusz mozgási sebességre és további sebzésre tesz szert.</p>
+            </div>
+            <video controls poster="mundo-thumbnail5.jpg">
+                <source src="../videos/SkillR.mp4" type="video/mp4">
+                A böngésződ nem támogatja a videó lejátszását.
+            </video>
+        </div>
+    </div>
+    <!-- JS hivatkozás -->
+    <script src="../js/characterSkills.js"></script>
+</body>
+</html>

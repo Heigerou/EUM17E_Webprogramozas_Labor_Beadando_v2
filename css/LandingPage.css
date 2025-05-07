@@ -1,0 +1,47 @@
+body{
+            margin: 0;
+            padding: 0;
+            height : 100vh;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url(kezdolap.jpg);
+            background-size: cover ;
+            background-repeat: no-repeat;
+            background-position: center;
+            text-shadow: 1px 1px 3px;
+        }
+        nav {
+            background-color:black; /*kék vízszintes menü*/
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: purple; /* egeret ráhúzva lila lesz lila */
+        }
+        /* világítson a menü amiben vagyok*/
+        nav a.active
+        {
+            background-color: purple;
+            text-decoration: underline;
+
+        }
+
+
+        .content1 {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .content2 {
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+        }

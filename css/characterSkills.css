@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(storybackground.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-shadow: 1px 1px 3px;
+    background-color: #0f0f0f; /* háttérszín sötét háttérhez */
+    }
+    
+
+nav {
+    background-color: black;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: purple;
+}
+
+nav a.active {
+    background-color: purple;
+    text-decoration: underline;
+}
+
+.container {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Kép és szöveg balra, videó jobbra */
+.skill-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.left-content {
+    flex: 1;
+    max-width: 50%;
+}
+
+.skill-block img {
+    width: 25%; /*itt csökken a kép méretét 25%-ra */
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 15px;
+    border: 3px solid white;
+}
+
+.skill-text {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #f5dada; /* <<< itt állítottuk be a szöveg színét */
+    background-color: black;
+    border: 1px solid white;
+}
+
+.skill-block video {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    border: 2px solid white; /* Fehér keret legyena a vieók lejátszója körül */
+    box-sizing: border-box;
+    flex: 1;
+    background-color: black; 
+}
+
+@media (max-width: 768px) {
+    .skill-block {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-content,
+    .skill-block video {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .skill-block img {
+        width: 50%;
+    }
+}
+.page-title {
+    text-align: center;
+    color: white;
+    margin: 20px 0;
+    font-size: 32px;
+    text-shadow: 2px 2px 5px black;
+}

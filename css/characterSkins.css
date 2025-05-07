@@ -1,0 +1,116 @@
+body{
+                    margin: 0;
+                    padding: 0;
+                    height : 100vh;
+                    align-items: center;
+                    font-family: Arial, Helvetica, sans-serif;
+                    background-image: url(storybackground.jpg);
+                    background-attachment: fixed;
+                    background-size: cover ;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    text-shadow: 1px 1px 3px;
+                }
+        
+                nav {
+                    background-color:black; /*kék vízszintes menü*/
+                    padding: 10px 0;
+                    text-align: center;
+                }
+                nav a {
+                    color: white;
+                    text-decoration: none;
+                    padding: 10px 20px;
+                    font-weight: bold;
+                    transition: background-color 0.3s;
+                    display: inline-block;
+                }
+                nav a:hover {
+                    background-color: purple; /* egeret ráhúzva lila lesz lila */
+                }
+                /* világítson a menü amiben vagyok*/
+                nav a.active
+                {
+                    background-color: purple;
+                    text-decoration: underline;
+        
+                }
+        
+        
+                .content1 {
+                    text-align: center;
+                    margin-top: 10px;
+                }
+                .content2 {
+                    position: absolute;
+                    bottom: 10px;
+                    width: 100%;
+                    text-align: center;
+                }
+                /* Csúsztatható képek stílusa*/
+                .main-image {
+                 width: 600px;
+                    height: auto;
+                    border: 5px solid #444;
+                    border-radius: 10px;
+                    margin-bottom: 20px;
+                    border: 2px solid white;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    }
+                        .thumbnails {
+                        display: flex;
+                        justify-content: center;
+                        gap: 10px;
+                        flex-wrap: wrap;
+                        }
+                        .thumbnail {
+                        width: 100px;
+                        height: auto;
+                        cursor: pointer;
+                        border: 2px solid transparent;
+                        border-radius: 8px;
+                        transition: border 0.3s;
+                        }
+                        .thumbnail:hover {
+                        border: 2px solid #00bfff;
+                        }
+
+                        h1{ 
+                            text-align: center;
+                            color:white;
+                          }
+                          /* Léptetéshez nyilak CSS*/
+                          .image-slider {
+                                position: relative;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                margin: 20px 0;
+                            }
+
+                            .arrow {
+                                color: white;
+                                font-size: 48px;
+                                cursor: pointer;
+                                user-select: none;
+                                padding: 10px;
+                                transition: color 0.3s;
+                                text-shadow: 2px 2px 4px black;
+                            }
+
+                            .arrow:hover {
+                                color: #00bfff;
+                            }
+
+                            .arrow.left {
+                                position: absolute;
+                                left: 10px;
+                            }
+
+                            .arrow.right {
+                                position: absolute;
+                                right: 10px;
+                            }
+                            /* Nyilak CSS vége*/
